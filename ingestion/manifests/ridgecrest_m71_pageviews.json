@@ -1,0 +1,46 @@
+{
+  "event": {
+    "name": "Ridgecrest Earthquake",
+    "magnitude": 7.1,
+    "event_time_utc": "2019-07-06T03:19:53Z"
+  },
+  "window": {
+    "pre_hours": 6,
+    "post_hours": 24
+  },
+  "base_url": "https://dumps.wikimedia.org/other/pageviews/2019/2019-07/",
+  "files": [
+    "pageviews-20190705-210000.gz",
+    "pageviews-20190705-220000.gz",
+    "pageviews-20190705-230000.gz",
+    "pageviews-20190706-000000.gz",
+    "pageviews-20190706-010000.gz",
+    "pageviews-20190706-020000.gz",
+    "pageviews-20190706-030000.gz",
+    "pageviews-20190706-040000.gz",
+    "pageviews-20190706-050000.gz",
+    "pageviews-20190706-060000.gz",
+    "pageviews-20190706-070000.gz",
+    "pageviews-20190706-080000.gz",
+    "pageviews-20190706-090000.gz",
+    "pageviews-20190706-100000.gz",
+    "pageviews-20190706-110000.gz",
+    "pageviews-20190706-120000.gz",
+    "pageviews-20190706-130000.gz",
+    "pageviews-20190706-140000.gz",
+    "pageviews-20190706-150000.gz",
+    "pageviews-20190706-160000.gz",
+    "pageviews-20190706-170000.gz",
+    "pageviews-20190706-180000.gz",
+    "pageviews-20190706-190000.gz",
+    "pageviews-20190706-200000.gz",
+    "pageviews-20190706-210000.gz",
+    "pageviews-20190706-220000.gz",
+    "pageviews-20190706-230000.gz",
+    "pageviews-20190707-000000.gz",
+    "pageviews-20190707-010000.gz",
+    "pageviews-20190707-020000.gz",
+    "pageviews-20190707-030000.gz"
+  ]
+}
+

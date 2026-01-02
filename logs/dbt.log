@@ -61,3 +61,19 @@ Internal Error
 [0m13:06:57.299380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x786aa1f78dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x786a73c7be60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x786a73ec5c40>]}
 [0m13:06:57.300624 [debug] [MainThread]: Flushing usage events
 [0m13:06:57.507607 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:09:53.627193 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75c31c4805c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75c31c0ccb30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75c31be221b0>]}
+
+
+============================== 18:09:53.633729 | 6f79e300-8d96-4df9-982e-236f00cb2209 ==============================
+[0m18:09:53.633729 [info ] [MainThread]: Running with dbt=1.11.2
+[0m18:09:53.634623 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'version_check': 'True', 'use_colors': 'True', 'empty': 'None', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'introspect': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'no_print': 'None', 'printer_width': '80', 'log_format': 'default', 'invocation_command': 'dbt parse', 'cache_selected_only': 'False', 'log_path': 'logs', 'profiles_dir': '/home/kokomk/.dbt', 'warn_error': 'None', 'log_cache_events': 'False', 'debug': 'False', 'static_parser': 'True', 'target_path': 'None'}
+[0m18:09:53.635368 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/kokomk/Projects/gcp-public-data-correlation/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:09:53.637244 [debug] [MainThread]: Resource report: {"command_name": "parse", "command_success": false, "command_wall_clock_time": 0.12256616, "process_in_blocks": "0", "process_kernel_time": 0.230767, "process_mem_max_rss": "100144", "process_out_blocks": "8", "process_user_time": 2.800173}
+[0m18:09:53.638989 [debug] [MainThread]: Command `dbt parse` failed at 18:09:53.638503 after 0.12 seconds
+[0m18:09:53.640371 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75c31bc56330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75c31bb14a70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75c31bc0e240>]}
+[0m18:09:53.641690 [debug] [MainThread]: Flushing usage events
+[0m18:09:53.825495 [debug] [MainThread]: An error was encountered while trying to flush usage events

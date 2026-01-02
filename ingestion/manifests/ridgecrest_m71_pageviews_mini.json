@@ -1,0 +1,16 @@
+{
+  "event": {
+    "name": "Ridgecrest Earthquake",
+    "magnitude": 7.1,
+    "event_time_utc": "2019-07-06T03:19:53Z"
+  },
+  "window": {
+    "pre_hours": 6,
+    "post_hours": 24
+  },
+  "base_url": "https://dumps.wikimedia.org/other/pageviews/2019/2019-07/",
+  "files": [
+    "pageviews-20190705-210000.gz"
+  ]
+}
+

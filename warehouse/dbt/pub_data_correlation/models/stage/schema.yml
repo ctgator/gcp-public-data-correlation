@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: stg_usgs_events_latest
+    description: Canonical latest view of each USGS seismic event.
+    columns:
+      - name: event_id
+        tests:
+          - unique
+          - not_null
+      - name: event_time
+        tests:
+          - not_null
+
+  - name: stg_event_windows
+    description: Time windows around seismic events.
+    columns:
+      - name: event_id
+        tests:
+          - unique
+          - not_null
+      - name: window_start
+        tests:
+          - not_null
+      - name: window_end
+        tests:
+          - not_null
+
+  - name: stg_event_pageview_window
+    description: Hourly Wikimedia pageviews joined into event windows.
+    columns:
+      - name: event_id
+        tests:
+          - not_null
+      - name: hour_ts
+        tests:
+          - not_null
+

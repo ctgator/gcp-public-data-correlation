@@ -1,0 +1,44 @@
+version: 2
+
+sources:
+  - name: raw
+    description: >
+      Raw ingested data from external public sources.
+      Append-only; no transformations or deduplication applied.
+    database: "{{ target.database }}"
+    schema: raw
+
+    tables:
+      - name: usgs_seismic_events
+        description: >
+          Raw USGS seismic events. One row per (event_id, ingest_time).
+        config:
+          loaded_at_field: ingest_time
+          freshness:
+            warn_after: {count: 6, period: hour}
+            error_after: {count: 24, period: hour}
+        columns:
+          - name: event_id
+            tests: [not_null]
+          - name: event_time
+            tests: [not_null]
+          - name: ingest_time
+            tests: [not_null]
+
+      - name: wikimedia_pageviews
+        description: >
+          Raw Wikimedia Pageviews API output. Hourly grain.
+        config:
+          loaded_at_field: ingest_time
+          freshness:
+            warn_after: {count: 6, period: hour}
+            error_after: {count: 24, period: hour}
+        columns:
+          - name: project
+            tests: [not_null]
+          - name: article
+            tests: [not_null]
+          - name: hour_ts
+            tests: [not_null]
+          - name: ingest_time
+            tests: [not_null]

@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: mart_event_attention_spike
+    description: >
+      Event-level summary of public attention response to seismic events.
+    columns:
+      - name: event_id
+        tests:
+          - unique
+          - not_null
+
+      - name: event_time
+        tests:
+          - not_null
+
+      - name: baseline_avg_views_per_hour
+        tests:
+          - not_null
+
+      - name: spike_detected
+        tests:
+          - not_null
+
